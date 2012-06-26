@@ -1,0 +1,9 @@
+<h1>add email</h1>
+<div id="user_nav">
+  <%= form_for @userd, :url => {:controller => "profiles",:action => "addinfo"} do |f| %>
+Fname : &nbsp <%= f.text_field :fname %>
+Lname : &nbsp <%= f.text_field :lname %>
+<%= f.submit "Add Field" %>
+  <% end %>
+</div>
+

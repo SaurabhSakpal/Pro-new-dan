@@ -1,0 +1,9 @@
+<h1>Profile Page</h1></br></hr>
+<p>
+<% if user_signed_in? && @userd != nil  %>
+<h3>FIRST NAME:- <%= @userd.fname %></h3>
+<h3>LAST NAME:- <%= @userd.lname %></h3>
+<% end %>
+<h3>USER EMAIL:- <%= @user.email %></h3>
+</p>
+
