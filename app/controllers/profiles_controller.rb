@@ -9,6 +9,7 @@ end
 
 def addemail
 @user = current_user
+@userdd = UserImpl.find_by_user_id(@user.id)
 @userd = UserImpl.new
 end
 

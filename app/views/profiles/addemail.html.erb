@@ -1,9 +1,17 @@
-<h1>add email</h1>
+
+<h1>Add Details<h1>
+</br>
+</hr>
 <div id="user_nav">
+<% if @userdd == nil %>
+<h3>Add First name and Last name</h3>
+</br>
   <%= form_for @userd, :url => {:controller => "profiles",:action => "addinfo"} do |f| %>
-Fname : &nbsp <%= f.text_field :fname %>
-Lname : &nbsp <%= f.text_field :lname %>
+Fname : &nbsp <%= f.text_field :fname %></br>
+Lname : &nbsp <%= f.text_field :lname %></br>
 <%= f.submit "Add Field" %>
   <% end %>
+<% end %>
 </div>
+
 
