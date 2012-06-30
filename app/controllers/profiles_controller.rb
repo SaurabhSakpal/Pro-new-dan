@@ -5,6 +5,8 @@ before_filter :authenticate_user!, :except => [:addinfo]
 def show
 @user = current_user
 @userd = UserImpl.find_by_user_id(@user.id)
+#omniauth = request.env['omniauth.auth']
+#@sss = omniauth['info']['email']
 end
 
 def addemail

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserImplTest < ActiveSupport::TestCase
+class OmniauthCallbacksControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end
