@@ -20,6 +20,7 @@ def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
                          password:Devise.friendly_token[0,20]
                          )
   end
+ @user
 end
 def self.new_with_session(params, session)
     super.tap do |user|
@@ -28,11 +29,5 @@ def self.new_with_session(params, session)
       end
     end
   end
-def to_key
-  new_record? ? nil : [ self.send(self.class.primary_key) ]
-end
 
-def persisted?
-  false
-end
 end
