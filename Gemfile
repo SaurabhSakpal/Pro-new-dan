@@ -37,3 +37,5 @@ gem 'devise'
 gem "omniauth-facebook"
 # To use debugger
 # gem 'debugger'
+gem 'omniauth-twitter', :git => 'https://github.com/arunagw/omniauth-twitter.git'
+gem 'nestful'

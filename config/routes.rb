@@ -11,6 +11,10 @@ Tracks::Application.routes.draw do
 	match 'profiles/addemail' => 'profiles#addemail', :as => :addemail
 	match 'profiles/addinfo' => 'profiles#addinfo', :as => :addinfo
 	match 'home/show' => 'home#show', :as => :welcome
+  
+  match 'profiles/fetchcur' => 'profiles#fetchcur'
+  match 'profiles/convertcur' => 'profiles#convertcur', :as => :currency
+  match 'profiles/showcurrate/:id' => 'profiles#showcurrate'
 		
   # Keep in mind you can assign values other than :controller and :action
 
